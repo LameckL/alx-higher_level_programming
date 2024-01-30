@@ -8,7 +8,7 @@ request(process.argv[2], function (err, response, body) {
     for (let i = 0; i < json.length; i++) {
       if (json[i].completed === true) {
         if (respo[json[i].userId] === undefined) {
-          resp[json[i].userId] = 0;
+          respo[json[i].userId] = 0;
         }
         respo[json[i].userId]++;
       }
